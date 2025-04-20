@@ -25,12 +25,6 @@ To run the Kafka cluster with 1 broker, use the following command:
 docker compose -f 1-broker-cluster.yaml up
 ```
 
-To run the Kafka cluster with 1 broker, use the following command:
-
-```bash
-docker compose -f 1-broker-cluster.yaml up
-```
-
 To run the Kafka cluster with 2 brokers, use the following command:
 
 ```bash
