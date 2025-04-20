@@ -15,7 +15,27 @@ This project contains examples to reproduce the scenarios described in the [offi
 ## 🚀 Getting Started
 
 Each example is explained with step-by-step instructions and can be run independently.  
-Make sure to start the Kafka cluster as shown in the examples (1 or 2 brokers depending on the scenario).
+Make sure to start the Kafka cluster before running any examples (1 or 2 brokers depending on the scenario).
+
+### ▶️ Run Kafka with 1 Broker
+
+To run the Kafka cluster with 1 broker, use the following command:
+
+```bash
+docker compose -f 1-broker-cluster.yaml up
+```
+
+To run the Kafka cluster with 1 broker, use the following command:
+
+```bash
+docker compose -f 1-broker-cluster.yaml up
+```
+
+To run the Kafka cluster with 2 brokers, use the following command:
+
+```bash
+docker compose -f 2-broker-cluster.yaml up
+```
 
 ## 📌 Notes
 
