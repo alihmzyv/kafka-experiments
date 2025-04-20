@@ -40,4 +40,4 @@ docker compose -f 2-broker-cluster.yaml up
 
 For a full walkthrough and deeper explanations, check out the accompanying Medium articles:
 
-👉 Producer: [[Message Loss in Kafka – Inevitable, But Can Be Made Rare](https://medium.com/your-article-url)](https://medium.com/@alihmzyv/apache-kafka-producer-experiments-network-analysis-db972917bc2c)
+👉 Producer: [Apache Kafka Producer Experiments + Network Analysis](https://medium.com/@alihmzyv/apache-kafka-producer-experiments-network-analysis-db972917bc2c)
