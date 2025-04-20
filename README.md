@@ -1,6 +1,6 @@
 # Kafka Configuration Scenarios
 
-This project contains examples to reproduce the scenarios described in the [official Apache Kafka documentation](https://kafka.apache.org/documentation/) for various producer configuration settings.
+This project contains examples to reproduce the scenarios described in the [official Apache Kafka documentation]([https://kafka.apache.org/documentation/](https://kafka.apache.org/39/documentation.html)) for various producer configuration settings.
 
 ## 🔍 What’s Covered
 
