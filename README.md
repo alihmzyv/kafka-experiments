@@ -42,4 +42,5 @@ docker compose -f 2-broker-cluster.yaml up
 For a full walkthrough and deeper explanations, check out the accompanying Medium articles:
 
 👉 Producer: [Understanding How Kafka Works Part 1 — Producer](https://medium.com/@alihmzyv/apache-kafka-producer-experiments-network-analysis-db972917bc2c)
+
 👉 Consumer: [Understanding How Kafka Works Part 2 — Consumer](https://medium.com/@alihmzyv/understanding-how-kafka-works-part-2-consumer-c8fc304715aa)
