@@ -1,10 +1,11 @@
 # Kafka Configuration Scenarios
 
-This project contains examples to reproduce the scenarios described in the [official Apache Kafka documentation]([https://kafka.apache.org/documentation/](https://kafka.apache.org/39/documentation.html)) for various producer configuration settings.
+This project contains examples to reproduce the scenarios described in the [official Apache Kafka documentation](https://kafka.apache.org/39/documentation.html) for various producer and consumer configuration settings.
 
 ## 🔍 What’s Covered
 
-- *delivery.timeout.ms*, *linger.ms*, *batch.size*, and more  
+- *delivery.timeout.ms*, *linger.ms*, *batch.size*, and more for producer
+- *heartbeat.interval.ms*, *session.timeout.ms*, *max.poll.records*, *max.poll.interval.ms*, and more for consumer
 
 ## 🛠️ Requirements
 
@@ -40,4 +41,5 @@ docker compose -f 2-broker-cluster.yaml up
 
 For a full walkthrough and deeper explanations, check out the accompanying Medium articles:
 
-👉 Producer: [Understanding How Kafka Producer Works Through Java and Wireshark Traces](https://medium.com/@alihmzyv/apache-kafka-producer-experiments-network-analysis-db972917bc2c)
+👉 Producer: [Understanding How Kafka Works Part 1 — Producer](https://medium.com/@alihmzyv/apache-kafka-producer-experiments-network-analysis-db972917bc2c)
+👉 Consumer: [Understanding How Kafka Works Part 2 — Consumer](https://medium.com/@alihmzyv/understanding-how-kafka-works-part-2-consumer-c8fc304715aa)
