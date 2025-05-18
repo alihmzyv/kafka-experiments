@@ -5,10 +5,11 @@ services:
     ports:
       - "9090:8080"
     environment:
-      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka1:29092, kafka2:29094
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka1:29092, kafka2:29093, kafka3:29095
     depends_on:
       - kafka1
       - kafka2
+      - kafka3
     networks:
       - kafka-net
   zookeeper:
@@ -44,6 +45,20 @@ services:
       KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka2:29094,OUTSIDE://127.0.0.1:9094
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
       KAFKA_LISTENERS: INSIDE://:29094,OUTSIDE://:9094
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    networks:
+      - kafka-net
+    depends_on:
+      - zookeeper
+  kafka3:
+    image: wurstmeister/kafka
+    ports:
+      - "9095:9095"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka3:29095,OUTSIDE://127.0.0.1:9095
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+      KAFKA_LISTENERS: INSIDE://:29095,OUTSIDE://:9095
       KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     networks:
